@@ -1,9 +1,9 @@
-;;; blt-emacs-theme.el --- Emacs theme with a light background.
+;;; blt-theme.el --- Emacs theme with a light background.
 
 ;; Copyright (C) 2016, Onur Temizkan
 
 ;; Author: Onur Temizkan
-;; https://github.com/onurtemizkan/blt-emacs
+;; https://github.com/onurtemizkan/blt
 ;; Version: 0.1
 ;; Package-Requires: ((emacs "24"))
 ;; Created with emacs-theme-generator, https://github.com/mswift42/theme-creator.
@@ -28,7 +28,7 @@
 
 ;;; Code:
 
- (deftheme blt-emacs)
+ (deftheme blt)
  (let ((class '((class color) (min-colors 89)))
        (fg1 "#535353")
        (fg2 "#5f5f5f")
@@ -50,7 +50,7 @@
        (var     "#535353")
        (warning "#dc322f"))
    (custom-theme-set-faces
-   'blt-emacs
+   'blt
         `(default ((,class (:background ,bg1 :foreground ,fg1))))
         `(font-lock-builtin-face ((,class (:foreground ,builtin))))
         `(font-lock-comment-face ((,class (:foreground ,comment))))
@@ -246,10 +246,10 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'blt-emacs)
+(provide-theme 'blt)
 
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
 
-;;; blt-emacs-theme.el ends here
+;;; blt-theme.el ends here
